@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<title> Registration Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<app-module2></app-module2>
+<app-navigation></app-navigation>
+
+<div class="signup-form bg-light">
+    <form [formGroup]="uiform" (ngSubmit)="onSubmit(uiform)">
+		<h2>Register</h2>
+		<p class="hint-text">Register Now</p>
+
+		 <div class="form-group">
+                <label for="name">Id</label>
+                <input type="text" class="form-control" formControlName="id" />
+            </div>
+
+
+		<div class="form-group">
+                <label for="email"> Email</label>
+                <input type="email" class="form-control" formControlName="email" />
+            </div>
+
+		   <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" formControlName="name" />
+            </div>
+
+        <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" class="form-control" formControlName="company" />
+            </div>
+
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button><br>
+        </div>
+    </form>
+	<div class="text-center bg-success">Already have an account? <a href="/login">Sign in</a></div>
+</div>
+</body>
+</html>
+
+<app-footer></app-footer>

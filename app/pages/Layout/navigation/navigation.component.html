@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <title>navigation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+
+  <meta charset="utf-8">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/appton/1-1/vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/appton/1-1/vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Google fonts - Poppins-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
+  <!-- Lightbox-->
+  <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/appton/1-1/vendor/lightbox2/css/lightbox.css">
+  <!-- Custom font icons-->
+  <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/appton/1-1/css/fontastic.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/appton/1-1/css/style.default.css?v=2" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/appton/1-1/css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="https://d19m59y37dris4.cloudfront.net/appton/1-1/img/favicon.png">
+
+</head>
+<body>
+    <header class="site-navbar" >
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="mr-auto">
+            <nav class="site-navigation navbar-static-top" role="navigation">
+              <ul class="site-menu main-menu ">
+                <li class="active">
+                  <a routerLink="/Homepage" class="nav-link text-left">Home</a>
+                </li>
+                <li>
+                  <a [routerLink]="['/register']" class="nav-link text-left">New Registration</a>
+                </li>
+                <li>
+                  <a [routerLink]="['/delete']" class="nav-link text-left">Delete</a>
+                </li>
+                <li>
+                    <a routerLink="/show" class="nav-link text-left">Contacts</a>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <div class="social-wrap">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
+                class="icon-menu h3"></span></a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </header>
